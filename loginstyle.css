@@ -1,0 +1,123 @@
+/* Base Colors */
+:root {
+    --adzu-blue: #003366;
+    --adzu-yellow: #ffcc00;
+    --adzu-white: #ffffff;
+    --light-gray: #f4f4f4;
+    --dark-gray: #333333;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--adzu-white);
+    color: var(--adzu-white);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--adzu-blue);
+    color: var(--adzu-white);
+    padding: 1rem 20px;
+    display: flex;
+    align-items: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.adzupng{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 700px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: var(--light-blue);
+}
+
+.container {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--adzu-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: var(--adzu-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1em;
+    background-color: var(--adzu-yellow);
+    color: var(--adzu-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #e5c200;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--adzu-blue);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.adzupng{
+
+}
