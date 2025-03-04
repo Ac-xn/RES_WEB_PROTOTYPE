@@ -19,6 +19,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--adzu-white);
     color: var(--adzu-white);
+    
 }
 
 /* Header Styles */
@@ -31,17 +32,28 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.head{
+    font-size: 30px;
+    display:inline-block;
+    max-width: fit-content;
+    margin-left: 18px;
+    padding: 0px;
+    font-family: "Cormorant Garamound" serif;
+}
+
 header .logo {
     width: 50px;
     height: auto;
-    margin-right: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .adzupng{
     width: 50px;
     height: auto;
     position: relative;
-    left: 700px;
+    margin-left: auto;
 }
 
 header h1 {
@@ -59,12 +71,18 @@ header h1 {
 }
 
 .container {
-    max-width: 400px;
-    padding: 2rem;
-    background-color: var(--adzu-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; 
+    padding: 20px;
+    background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 h2 {
     color: var(--adzu-blue);
