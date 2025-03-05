@@ -27,7 +27,6 @@ header {
     color: var(--adzu-white);
     padding: 1rem 20px;
     display: flex;
-    align-items: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,7 +40,7 @@ header h1 {
     font-size: 2rem;
     margin: 0;
     flex-grow: 1;
-    margin-left: 10px;
+    padding: 0%;
 }
 
 header ul {
@@ -187,15 +186,14 @@ body {
 header {
     background-color: #0055A4;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
 }
 
-header h1 {
+header span {
      margin-right: 60;
 }
 
-header p {
+header span {
     font-size: 1.1em;
 }
 
@@ -215,7 +213,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 20px;
 }
 
 /* Style for the Login button in the nav bar */
@@ -242,4 +239,37 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #003366;0055A4
     color: #FFD700; /* Optional: change text color on hover */
+}
+
+/* New Lines of Code */
+.shsP {
+    margin-left: 20px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Header_Head {
+    position: relative;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 20px;
+    font-family: "Cormorant Garamound";
+    marg
+}
+.img {
+    height: auto;
+    width: auto;
+    padding: 0%;
+    border: 0;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+#login {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
 }
