@@ -37,9 +37,24 @@ header {
     display:inline-block;
     max-width: fit-content;
     margin-left: 18px;
-    padding: 0px;
-    font-family: "Cormorant Garamound" serif;
-}
+    padding: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .tp{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+  }
 
 header .logo {
     width: 50px;
@@ -77,7 +92,7 @@ header h1 {
     align-items: center;
     width: 100%;
     max-width: 350px; 
-    padding: 20px;
+    padding: 46px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
