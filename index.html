@@ -36,6 +36,17 @@
     </header>
 
     <main>
+        <script>
+            function searchTopic() {
+                let query = document.getElementById('searchBar').value;
+                if (query.trim() === "") {
+                    alert("Please enter a topic.");
+                    return;
+                }
+                // Redirect to results page with search query
+                window.location.href = results.html?search=${encodeURIComponent(query)};
+            }
+        </script>
         <!-- Search Bar Section -->
         <div class="search-bar">
             <input type="text" id="searchQuery" placeholder="Enter research title or topic...">
