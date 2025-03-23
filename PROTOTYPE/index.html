@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADZU Research Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body onload="checkLoginStatus()">
+
+    <header>
+        <div class="imgL">
+            <img src="shs_logo.png" alt="shs" class="shslogo">
+        </div>
+        <div id="Header_Head">
+            <a href="index.html" class="shsP">ADZU SHS Research Hub</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="content">
+                <a href="index.html">Home</a>
+                <a href="">Guidelines</a>
+                <a href="">About Me</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="main_logo.png">   
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter research title or topic...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+
+        <!-- Upload Section - Hidden by Default -->
+        <section class="upload-section" id="upload-section" style="display: none;">
+            <div class="container">
+                <h2>Upload Research Paper</h2>
+                <input type="file" id="fileUpload" accept=".pdf,.doc,.docx">
+                <button id="uploadButton" onclick="uploadFile()">Upload</button>
+            </div>
+        </section>
+
+        <!-- Results Section 
+        <div class="results" id="results">
+            <h3>Search Results</h3>
+            <p>No results found.</p>
+        </div>
+    -->  <script>
+        function searchTopic() {
+            let query = document.getElementById('searchBar').value;
+            if (query.trim() === "") {
+                alert("Please enter a topic.");
+                return;
+            }
+            // Redirect to results page with search query
+            window.location.href = `results.html?search=${encodeURIComponent(query)}`;
+        }
+    </script>
+    </main>
+
+    <script src="search.js"></script>
+</body>
+</html>

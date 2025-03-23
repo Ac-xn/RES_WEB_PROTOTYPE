@@ -1,0 +1,221 @@
+/* Base Colors */
+:root {
+    --adzu-blue: #0055A4;
+    --adzu-yellow: #ffcc00;
+    --adzu-white: #ffffff;
+    --light-gray: #f4f4f4;
+    --dark-gray: #333333;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--adzu-white);
+    color: var(--adzu-white);
+    
+}
+
+/* Header Styles */
+header {
+    background-color: var(--adzu-blue);
+    color: var(--adzu-white);
+    padding: 1rem 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgL {
+    display: flex;
+    align-items: center;
+}
+
+.imgL img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#Header_Head {
+    display: inline-block;
+    max-width: fit-content;
+    margin-left: 5px;
+    padding: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shsP {
+    font-size: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--adzu-white);
+    margin: 0;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.shsP:hover {
+    color: var(--adzu-white);
+    text-decoration: none;
+}
+
+/* Right side elements */
+.img {
+    width: 50px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: var(--light-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    padding: 46px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    color: var(--adzu-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 10rem;
+}
+
+.W{
+    color: #333333;
+    margin-top: 10px;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+form input{
+    height: 50px;
+}
+
+.input-group label {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 350px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-width: 0;
+    font: inherit;
+    justify-content: center;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: var(--adzu-white);
+    color: black;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #666;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--adzu-blue);
+    box-shadow: 0 0 5px rgba(0, 85, 164, 0.2);
+    background-color: var(--adzu-white);
+}
+
+.input{
+    background-color: var(--adzu-white);
+    border: 2px solid var(--adzu-blue);
+    transition: 150ms ease;
+}
+.input:hover{
+    border-color: var(--adzu-blue);
+
+}
+
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1em;
+    background-color: var(--adzu-yellow);
+    color: var(--adzu-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #e5c200;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--adzu-blue);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.adzupng{
+
+}
+
+/* Registration section styling */
+.register-section {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.register-section a {
+    color: var(--adzu-blue);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}
